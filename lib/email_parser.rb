@@ -27,7 +27,9 @@ email.each do |new_list|
 end
 
 end
-
+end
+end
+end
 #   # reg = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/i
 # # email = @email_list.split(/[,\s]+/)
 #
