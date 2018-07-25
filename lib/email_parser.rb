@@ -50,6 +50,7 @@ def parse_duplicate(columns)
       duplicates.each{|x| x.destroy}
 end
 end
+end
 
  # parses CSV emails (FAILED - 1)
  # parses space delimited emails (FAILED - 2)
