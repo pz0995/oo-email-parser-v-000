@@ -13,8 +13,8 @@ class EmailParser
 def parse_emails
   # email_list= (email_list).split(",").map(&:strip)
   # email = email_list.gsub(/[[:space:]]/,'')
-email_list = email.split(" ") && email.split(",")
-email_list.each do |new_list|
+email = email_list.split(" ") && email_list.split(",")
+email.each do |new_list|
 
 end
 
