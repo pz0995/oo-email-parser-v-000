@@ -11,7 +11,8 @@ class EmailParser
   attr_accessor :parse, :columns, :email_list, :email
 
 def parse_emails(email_list)
-  email_list= (email_list).split(",").map(&:strip)
+  # email_list= (email_list).split(",").map(&:strip)
+  email_list.gsub(/\W/, ' ')
 
 end
 end
