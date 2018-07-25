@@ -17,7 +17,7 @@ emails do |csv|
   end
 
 
-  
+
 # emails.strip!
 # emails.gsub!(/\r\n/,'\n')
 # emails.gsub!(/\r/,'\n')
