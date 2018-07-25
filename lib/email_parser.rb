@@ -43,13 +43,13 @@ end
 #
 # end
 
-
-
-def parse_duplicate(columns)
-     self.group_by{|x| columns.map{|col| x.send(col)}}.each do |duplicates|
-      duplicates.each{|x| x.destroy}
-end
-end
+# 
+# 
+# def parse_duplicate(columns)
+#      self.group_by{|x| columns.map{|col| x.send(col)}}.each do |duplicates|
+#       duplicates.each{|x| x.destroy}
+# end
+# end
 end
 
  # parses CSV emails (FAILED - 1)
