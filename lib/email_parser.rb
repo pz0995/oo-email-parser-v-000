@@ -16,6 +16,14 @@ def parse_emails
 email = email_list.split(" ") && email_list.split(",")
 email.each do |new_list|
 
+  IO.foreach(email_list) do |email|
+  
+      # Remove trailing whitespace.
+      email.chomp!
+  
+      # Split on comma.
+      email = line.split(",")
+      email = line.split(" ")
 end
 
 end
