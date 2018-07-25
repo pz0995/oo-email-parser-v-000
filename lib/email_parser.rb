@@ -18,8 +18,6 @@ class EmailParser
 
 def parse
     #emails = "avi@test.com, arel@test.com test@avi.com, test@arel.com"
-    emails.join
-    emails.to_str
     # email_list = emails.split(\s?[, ]\s?)
    emails.split(",")
    emails.split(" ")
