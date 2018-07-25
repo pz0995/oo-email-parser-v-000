@@ -12,7 +12,7 @@ class EmailParser
 
 def parse_emails
 
-email_list = emails.split("\s?[, ]\s?"")
+email_list = emails.split("\s?[, ]\s?")
 # emails.strip!
 # emails.gsub!(/\r\n/,'\n')
 # emails.gsub!(/\r/,'\n')
