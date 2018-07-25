@@ -8,7 +8,7 @@ class EmailParser
 
 
 
-def extract_emails_to_array(text)
+def extract_emails_to_array(email)
 
   # reg = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/i
 email = @email_list.split(/[,\s]+/)
