@@ -8,15 +8,15 @@
 #
 #
 class EmailParser
-  attr_accessor :parse, :email_list, :email
+  attr_accessor :parse, :email_list, :emails
 
 def parse_emails
-email_list.strip!
-email_list.gsub!(/\r\n/,'\n')
-email_list.gsub!(/\r/,'\n')
+emails.strip!
+emails.gsub!(/\r\n/,'\n')
+emails.gsub!(/\r/,'\n')
 # normalize comma delimiters so it doesn't matter
 # if you have one, two or one,two or one , two etc...
-email_list.gsub!(/\s*,\s*/, ',')
+emails.gsub!(/\s*,\s*/, ',')
 
 # split lines into a single array of lines
 
