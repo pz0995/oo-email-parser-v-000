@@ -21,8 +21,8 @@ email.each do |new_list|
       # Remove trailing whitespace.
       email.chomp!
 
-      # Split on comma.
-      email = line.split(",")
+      # # Split on comma.
+      # email = line.split(",")
       # email = line.split(" ")
 end
 
