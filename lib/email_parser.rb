@@ -16,8 +16,8 @@ def parse_emails
 email = email_list.split(" ") && email_list.split(",")
 email.each do |new_list|
 
-  IO.foreach(email_list) do |email|
-
+  foreach(email_list) do |email|
+@emails.split(/[,\s]+/)
       # Remove trailing whitespace.
       email.chomp!
 
