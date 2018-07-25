@@ -14,9 +14,12 @@ def parse_emails
   # email_list= (email_list).split(",").map(&:strip)
   # email = email_list.gsub(/[[:space:]]/,'')
 email_list = email.split(" ") && email.split(".")
-end
+email_list.each do |new_list|
+
 end
 
+end
+end
 #   # reg = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/i
 # # email = @email_list.split(/[,\s]+/)
 #
