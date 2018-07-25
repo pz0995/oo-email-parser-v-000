@@ -11,7 +11,7 @@ class EmailParser
   attr_accessor :parse, :email_list, :email
 
 def parse_emails
-  email_list.each_line("\n") do |row|
+  parse = email_list.each_line("\n") do |email|
   email.split("," || " ")
 
   # email_list= (email_list).split(",").map(&:strip)
