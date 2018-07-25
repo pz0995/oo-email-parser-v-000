@@ -22,7 +22,7 @@ def parse
   #  emails.split(",") &&  emails.split(" ")
 
    emails.each_line("\n") do |row|
-  columns = row.split(",")
+     columns = row.split(",")
 end
 end
 end
