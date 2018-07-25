@@ -11,8 +11,8 @@ class EmailParser
   attr_accessor :parse, :email_list, :email
 
 def parse_emails
-  parse = email_list.each_line("\n") do |email|
-  email.split("," || " ")
+  line.split(/\s*,\s*/)
+  line.split(',').map{|v| v.strip}
 
   # email_list= (email_list).split(",").map(&:strip)
   # email = email_list.gsub(/[[:space:]]/,'')
