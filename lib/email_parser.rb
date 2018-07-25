@@ -12,7 +12,7 @@ class EmailParser
 
 def parse_emails
 emails.join
-emails.split(\s?[, ]\s?)
+emails.split("\s?[, ]\s?")
 
 end
 end
