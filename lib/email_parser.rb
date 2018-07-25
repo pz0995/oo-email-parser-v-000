@@ -11,6 +11,7 @@ class EmailParser
   attr_accessor :parse, :email_list, :emails
 
 def parse_emails
+      emails = "avi@test.com, arel@test.com test@avi.com, test@arel.com"
 emails.join
 emails.to_s
 email_list = emails.split(\s?[, ]\s?)
