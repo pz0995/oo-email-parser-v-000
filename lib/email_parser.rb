@@ -11,12 +11,7 @@ class EmailParser
   attr_accessor :parse, :email_list, :emails
 
 def parse_emails
-  output = "This is a ruby output"
-emails do |csv|
-    csv << [output]
-  end
-
-
+email_list = emails.split(/\W+/)
 
 # emails.strip!
 # emails.gsub!(/\r\n/,'\n')
