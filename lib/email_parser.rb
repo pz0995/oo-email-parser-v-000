@@ -56,5 +56,3 @@ end
  # parses both CSV and space delimited emails (FAILED - 3)
 
  # parses and removes duplicate emails (FAILED - 4)
- require "csv"
- CSV.parse("one,two\nthree,four")
