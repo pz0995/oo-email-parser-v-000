@@ -14,8 +14,7 @@ email_list= File.read(email_list).split(",").map(&:strip)
   # text.scan(reg).uniq
 end
 end
-end
-end
+
 #
 # result_array = extract_emails_to_array(input.join(" ")).sort
 
