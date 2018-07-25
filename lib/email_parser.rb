@@ -18,6 +18,6 @@ email_list = @emails.split(/[,\s]+/)
 
   #  emails.each_line("\n") do |row|
   #    columns = row.split(",")
-end
+
 end
 end
