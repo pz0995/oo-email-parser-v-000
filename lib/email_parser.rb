@@ -11,7 +11,7 @@ class EmailParser
   attr_accessor :parse, :email_list, :emails
 
 def parse_emails
-email_list = emails.split(/\W+\s)
+email_list = emails.split(/\w+\s)
 
 # emails.strip!
 # emails.gsub!(/\r\n/,'\n')
