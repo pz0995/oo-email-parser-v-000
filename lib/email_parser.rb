@@ -11,16 +11,18 @@ class EmailParser
   attr_accessor :parse, :email_list, :emails
 
 def parse_emails
-emails.strip!
-emails.gsub!(/\r\n/,'\n')
-emails.gsub!(/\r/,'\n')
-# normalize comma delimiters so it doesn't matter
-# if you have one, two or one,two or one , two etc...
-emails.gsub!(/\s*,\s*/, ',')
+  output = "This is a ruby output"
+emails do |csv|
+    csv << [output]
+  end
 
-# split lines into a single array of lines
 
-email_array = emails.split('\n')
+  
+# emails.strip!
+# emails.gsub!(/\r\n/,'\n')
+# emails.gsub!(/\r/,'\n')
+# emails.gsub!(/\s*,\s*/, ',')
+# email_array = emails.split('\n')
 
 # split each line into an array
 
