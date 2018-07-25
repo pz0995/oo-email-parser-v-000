@@ -15,3 +15,4 @@ def parse_emails
   email_list = emails.split("\s?[, ]\s?")
 
 end
+end
