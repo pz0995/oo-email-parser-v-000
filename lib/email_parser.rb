@@ -12,7 +12,8 @@ class EmailParser
 
 def parse_emails
 
-  emails = emails.split(]\s?[, ]\s?/)
+  if emails.match \s?[, ]\s? = true
+    then emails.split(\s?[, ]\s?)
 
 end
 end
