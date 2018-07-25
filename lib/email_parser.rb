@@ -13,12 +13,12 @@ class EmailParser
 def parse_emails
   email_list.each_line("\n") do |row|
   columns = row.split("," || " ")
-  
+
   # email_list= (email_list).split(",").map(&:strip)
   # email = email_list.gsub(/[[:space:]]/,'')
 # email = email_list.split(" ") && email_list.split(",")
 # email.each do |new_list|
-# 
+#
 #   foreach(email_list) do |email|
 # @emails.split(/[,\s]+/)
 #       # Remove trailing whitespace.
@@ -29,7 +29,7 @@ def parse_emails
       # email = line.split(" ")
 end
 
-end
+
 end
 end
 
