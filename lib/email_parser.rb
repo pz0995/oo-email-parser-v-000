@@ -23,7 +23,7 @@ email.each do |new_list|
 
       # Split on comma.
       email = line.split(",")
-      email = line.split(" ")
+      # email = line.split(" ")
 end
 
 end
