@@ -7,11 +7,10 @@ class EmailParser
 
 
 
-
-def extract_emails_to_array
-
   # reg = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/i
-email = @email_list.split(/[,\s]+/)
+# email = @email_list.split(/[,\s]+/)
+
+email_list= File.read(email_list).split(",").map(&:strip)
   # text.scan(reg).uniq
 
 end
@@ -57,3 +56,5 @@ end
  # parses both CSV and space delimited emails (FAILED - 3)
 
  # parses and removes duplicate emails (FAILED - 4)
+ require "csv"
+ CSV.parse("one,two\nthree,four")
