@@ -12,8 +12,8 @@ class EmailParser
 
 def parse_emails
   # email_list= (email_list).split(",").map(&:strip)
-  email = email_list.gsub(/[[:space:]]/,'')
-
+  # email = email_list.gsub(/[[:space:]]/,'')
+email_list = email.split(" ") && email.split(".")
 end
 end
 
