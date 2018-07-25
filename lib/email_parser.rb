@@ -12,7 +12,7 @@ class EmailParser
 
 def parse_emails(email_list)
   # email_list= (email_list).split(",").map(&:strip)
-  email = email_list.gsub(/\W/, ' ')
+  email = email_list.gsub(/[[:space:]]/,'')
 
 end
 end
