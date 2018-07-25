@@ -26,7 +26,7 @@ email_array = email_list.split('\n')
 
 final_data = []
 
-email_array.each do |data|
+email_array.each do |final_data|
   final_data << email_list.split(',')
 end
   # parse = line.split(/\s*,\s*/)
