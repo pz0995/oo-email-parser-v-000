@@ -20,7 +20,7 @@ emails.gsub!(/\s*,\s*/, ',')
 
 # split lines into a single array of lines
 
-email_array = email_list.split('\n')
+email_array = emails.split('\n')
 
 # split each line into an array
 
