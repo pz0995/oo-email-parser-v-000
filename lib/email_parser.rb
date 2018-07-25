@@ -2,18 +2,29 @@
 # emails. The parse method on the class should separate them into
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
+# class EmailParser
+#   attr_accessor :parse, :columns, :email_list, :email
+#
+#
+#
 class EmailParser
   attr_accessor :parse, :columns, :email_list, :email
 
+def parse_emails(email_list)
+email_list= (email_list).split(",").map(&:strip)
+  email_list = extract_emails_to_array(input.join(" ")).sort
 
 
-  # reg = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/i
-# email = @email_list.split(/[,\s]+/)
-
-email_list= File.read(email_list).split(",").map(&:strip)
-  # text.scan(reg).uniq
 end
 end
+
+#   # reg = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/i
+# # email = @email_list.split(/[,\s]+/)
+#
+# email_list= File.read(email_list).split(",").map(&:strip)
+#   # text.scan(reg).uniq
+# end
+# end
 
 #
 # result_array = extract_emails_to_array(input.join(" ")).sort
