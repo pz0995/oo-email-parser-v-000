@@ -12,6 +12,7 @@ class EmailParser
 
 def parse_emails
 emails.join
+emails.to_s
 emails.split("\s?[, ]\s?")
 
 end
