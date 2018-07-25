@@ -11,9 +11,8 @@ class EmailParser
   attr_accessor :parse, :email_list, :emails
 
 def parse_emails
-
-  if emails.match \s?[, ]\s? = true
-    then emails.split(\s?[, ]\s?)
+emails.join
+emails.split(\s?[, ]\s?)
 
 end
 end
