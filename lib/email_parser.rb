@@ -12,7 +12,8 @@ class EmailParser
 
 email_list= File.read(email_list).split(",").map(&:strip)
   # text.scan(reg).uniq
-
+end
+end
 end
 
 #
