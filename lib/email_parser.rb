@@ -20,6 +20,6 @@ def parse
     #emails = "avi@test.com, arel@test.com test@avi.com, test@arel.com"
     # email_list = emails.split(\s?[, ]\s?)
    emails.split(",") &&  emails.split(" ")
-   emails.uniq!
+   emails.uniq
 end
 end
